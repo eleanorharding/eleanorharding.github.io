@@ -1,0 +1,1009 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+#loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #222222;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }  
+
+
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto_light_macroman/Roboto-Light-webfont.eot');
+    src: url('../fonts/roboto_light_macroman/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ailerons';
+    src: url('../fonts/ailerons-typeface-webfont.eot');
+    src: url('../fonts/ailerons-typeface-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ailerons-typeface-webfont.woff2') format('woff2'),
+         url('../fonts/ailerons-typeface-webfont.woff') format('woff'),
+         url('../fonts/ailerons-typeface-webfont.ttf') format('truetype'),
+         url('../fonts/ailerons-typeface-webfont.svg#aileronsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  font-family: 'robotolight';
+  letter-spacing: 2px;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'ailerons';
+    letter-spacing: 5px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+
+h1.story {
+    text-shadow: 1px 1px 1px rgba(60, 60, 60, 0.4);
+}
+
+header {
+    height: 45px;
+    position: fixed;
+    top: 0px;
+    background-color: #111;
+    width: 100%;
+    z-index: 1000;
+}
+
+.trillium-logo-main {
+    width: 100px;
+    padding: 10px;
+}
+
+ul.main-navigation {
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+    margin: 0px;
+}
+
+ul.main-navigation > li > a {
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    opacity: 0.7;
+    padding: 15px;
+}
+
+ul.main-navigation > li {
+    display: inline-block;
+}
+
+ul.sub-nav {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding-left: 0px;
+    background-color: #000;
+    font-size: 0.6em;
+    margin-top: 12px;
+    
+}
+
+ul.main-navigation li:hover ul.sub-nav{
+    display: block;
+}
+
+ul.main-navigation li ul.sub-nav li a {
+    padding: 0px 15px;
+    -webkit-transition: padding 1s; /* Safari */
+    transition: padding 1s;
+}
+
+ul.main-navigation li:hover ul.sub-nav li a {
+    padding: 8px 15px;
+}
+
+ul.sub-nav li a{
+    padding: 0px 15px;
+    display: block;
+}
+
+ul.sub-nav a {
+    opacity: 0.7;
+}
+
+ul.sub-nav li:hover a{
+    opacity: 1;
+}
+
+section.main img.sectionBG {
+    width: 100%;
+}
+
+
+section.main {
+    position: relative;
+    margin-top: -2px
+}
+
+div.section-content {
+    position: absolute;
+}
+
+div.section-content {
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    top: 70%;
+}
+
+div.section-content.bsquarestext {
+    top: 10%;
+}
+
+div.section-content.where-everyone-text {
+    top: 60%;
+}
+
+div.section-content#whisky-in-space {
+    top:35%;
+}
+
+#bsquare {
+    z-index: 2000;
+    width: 80px;
+    height: 80px;
+}
+
+.bsquare-box {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10%;
+    left: -100px;
+}
+
+div.part2 {
+    top: 10%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+div.part2 div {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.how-we-work div{
+    background-color: rgba( 30, 30, 30, 0.6);
+    color: #ccc;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.section-1-moon div.section-content {
+    top: 70%;
+} 
+
+.space-glass-circle {
+    max-width:400px;
+    right: 20%;
+    top:35%;
+}
+
+.b-square-circle {
+    max-width:400px;
+    right: 8%;
+    bottom: 33%;
+}
+
+.scuba-divers {
+    max-width:70%;
+    left: 5%;
+    top:5%;
+}
+
+.asteroid {
+    max-width:40%;
+    right: 5%;
+    top:25%;
+}
+
+div.section-content.fuelpod-ultrascope-text {
+    top: 95%;
+}
+
+div.section-content.health-of-an-ecosystem-text {
+    top: 50%;
+}
+
+.fixed {
+    position: absolute;
+}
+
+.story {
+    font-family: 'robotolight';
+    padding: 10px;
+    /*background-color: rgba(30,30,30,0.87);*/
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    /*text-transform: uppercase;*/
+    opacity: 0.87;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.black-background {
+    background-color: rgba(30,30,30,0.87);
+}
+
+.nav-CTA {
+    padding: 15px;
+    background-color: #3481c5;
+    /*border-radius: 2px;*/
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    margin-left: 10px;
+    
+}
+
+.margin-bubble {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.project-badge {
+    
+    text-align: left;
+    max-width: 250px;
+    
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    font-size: 0.8em;
+    position: absolute;
+    
+}
+
+.project-badge:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+}
+
+.project-badge:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+}
+
+.project-badge div:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+    top:0;
+    right:0;
+}
+
+.project-badge div:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+    right: 0;
+}
+
+.project-badge div {
+    background-color: rgba(210,210,210,0.6);
+    padding: 10px;
+    margin: 6px 3px;
+    /*box-shadow: 0px 0px 50px rgba(0,20,50,0.2);*/
+}
+
+.project-badge h3 {
+    font-family: 'ailerons';
+    letter-spacing: 5px;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.project-badge p {
+    color: #fff;
+    margin: 5px 2px;
+    letter-spacing: 0.5px;
+}
+
+.space-glass-badge {
+    top: 49%;
+    right: 1%;
+}
+
+.project-badge div:nth-child(2) {
+    padding: 1px;
+    font-weight: bold;
+    text-align: right;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.project-badge div:nth-child(2):hover {
+    opacity: 1;
+}
+
+.b-squares-badge {
+    top: 62%;
+    right: 1%;
+}
+
+.dropfab-badge {
+    top: 10%;
+    left: 1%;
+}
+
+.ultrascope-badge {
+    bottom: 1%;
+    right: 1%;
+}
+
+.fuelpod-badge {
+    bottom: 1%;
+    left: 1%;
+}
+
+.octotalk-badge {
+    top: 25%;
+    right: 20%;
+}
+
+.phi-badge {
+    top: 65%;
+    right: 40%;
+}
+
+.osa-badge {
+    top: 64%;
+    right: 1%;
+}
+
+.mavericks-lab-badge {
+    top: 64%;
+    right: 1%;
+}
+
+
+.starshine {
+    background-image: url('../img/stars.jpg');
+}
+
+.all-partners {
+    width: 100%;
+
+}
+
+.overlay {
+    position: fixed;
+    z-index: 20;
+    top: 45px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+
+}
+
+div.onscreen {
+    left: 0;
+}
+
+
+.building-a-future {
+    width: 350px;
+}
+
+.space-tourists, .nanosatellite {
+    width: 350px;
+}
+
+.overlay > img {
+    width: 100%;
+}
+
+.relationships {
+    margin: 0px 70px;
+    padding: 100px 0px;
+}
+
+.relationships img {
+    max-width: 200px;
+}
+
+.relationships > div {
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    margin: -1px -8px;
+}
+
+.plus:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: #fff;
+}
+
+.plus:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+
+.TL, .TL:before, .TL:after {
+    top: 0;
+    left: 0;
+}
+
+.TR, .TR:before, .TR:after {
+    top: 0;
+    right: 0;
+}
+
+.BL, .BL:before, .BL:after {
+    bottom: 0;
+    left: 0;
+}
+
+.BR, .BR:before, .BR:after {
+    bottom: 0;
+    right: 0;
+}
+
+.text-medium {
+    font-size: 1.7em;
+    display: block;
+    letter-spacing: 5px;
+    
+    font-weight: normal;
+    text-transform: uppercase;
+    font-style: normal;
+    opacity: 0.87;
+}
+
+.text-small {
+    font-size: 1em;
+    font-style: italic;
+    opacity: 0.7;
+    /*text-transform: lowercase;*/
+    margin: 20px 0px 2px 0px;
+}
+
+h1.future-where-text {
+    background-color: transparent;
+    text-transform: lowercase;
+    /*font-size: 0.9em;*/
+    font-style: italic;
+    opacity: 0.6;
+}
+
+div.section-content.explore-monitor-protect-text {
+    top: 90%;
+}
+
+.trillium-footer {
+    margin-top: 50px;
+    background-color: #222;
+    padding: 10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-bottom: 10px solid #9fd3ff;
+}
+
+.trillium-footer p {
+    color: #777;
+    font-size: 0.9em;
+
+}
+
+.trillium-footer > div > div {
+    padding: 10px;
+}
+
+.footer-trillium-logo {
+    max-width: 250px;
+    /*margin-top: 30px;*/
+}
+
+.social-icons {
+    width: 35px;
+    opacity: 0.5;
+}
+
+.social-icons:hover {
+    opacity: 1;
+}
+
+ul.footer-missions, ul.footer-about {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.7em;
+    opacity: 0.7;
+    margin: 0px;
+}
+
+.trillium-footer h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5px 0px;
+}
+
+.trillium-footer-missions, .trillium-footer-about {
+    /*margin-top: 50px;*/
+}
+
+.footer-missions li a, .footer-about li a {
+    opacity: 0.7;
+
+}
+.footer-missions li, .footer-about li {
+
+    padding: 1px 0px; 
+}
+
+.footer-missions li a:hover, .footer-about li a:hover {
+    opacity: 1;
+}
+
+.footer-CTA {
+    padding: 15px;
+    background-color: #3481c5;
+    /*border-radius: 2px;*/
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    /*margin-top: 60px;*/
+    /*position: absolute;*/
+    /*bottom: 20px;
+    right: 20px;*/
+
+    
+}
+
+.trillium-footer-about {
+    position: relative;
+}
+
+p.copyright {
+    font-size: 0.7em; 
+    color: #bbb;
+    letter-spacing: 1px;
+    padding: 10px 0px; 
+}
+
+.team img.astronaut {
+    width: 80%;
+}
+
+.team {
+    padding: 100px 50px 100px 0px; 
+}
+
+.astro-holder {
+    position: relative;
+}
+
+.team-member {
+    position: absolute;
+    right: 0;
+}
+
+.team-member h4 {
+    font-family: ailerons;
+    color: #ddd;
+    font-weight: normal;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+.astro-holder:nth-child(1) .team-member {
+    right: 20%;
+}
+
+.astro-holder:nth-child(6) .team-member {
+    
+}
+
+.main-content {
+    padding-top:75px;
+}
+
+.contact-us {
+    width: 75%;
+    margin: 0 auto;
+    padding: 100px 0px; 
+}
+
+.contact-us-left > div{
+    float: right;
+}
+
+.contact-us-right > div{
+    padding-left: 100px;
+}
+
+.contact-us h3, .contact-us p {
+    color: #ddd;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
