@@ -183,9 +183,6 @@
                 </div>
             </div>
 
-            <div class="overlay offscreen" id="ultrascope-overlay" onclick="showUltrascopeOverlay()">
-                <img src="img/overlays/ultrascope-overlay.jpg" />
-            </div>
             <div id="fuelpod"></div>
             <div class="project-badge fuelpod-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
                 <div>
@@ -600,25 +597,17 @@
         <script src="js/main.js"></script>
         <script src="js/jquery.scrollme.min.js"></script>
 
-        <!-- janky click function to bring up overlay mock -->
-        <script type="text/javascript">
-
-            function showUltrascopeOverlay() {
-                $( "div#ultrascope-overlay" ).toggleClass( "onscreen" );
-            }
-        </script>
-
         <script type="text/javascript">
             $(document).ready(function() {
                 
 
                 setTimeout(function(){
                    $('#preloader').toggleClass('preloader-complete'); 
-                }, 200);
+                }, 2000);
 
                 setTimeout(function(){
                    $('#preloader').toggleClass('hide-preloader'); 
-                }, 400);
+                }, 4000);
             });
         </script>
 
