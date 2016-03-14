@@ -103,12 +103,12 @@ html {
 
 @font-face {
     font-family: 'ailerons';
-    src: url('../fonts/ailerons-typeface-webfont.eot');
-    src: url('../fonts/ailerons-typeface-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ailerons-typeface-webfont.woff2') format('woff2'),
-         url('../fonts/ailerons-typeface-webfont.woff') format('woff'),
-         url('../fonts/ailerons-typeface-webfont.ttf') format('truetype'),
-         url('../fonts/ailerons-typeface-webfont.svg#aileronsregular') format('svg');
+    src: url('../fonts/ailerons/ailerons-typeface-webfont.eot');
+    src: url('../fonts/ailerons/ailerons-typeface-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.woff2') format('woff2'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.woff') format('woff'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.ttf') format('truetype'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.svg#aileronsregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -259,6 +259,10 @@ header {
     opacity: 0;
 }
 
+#preloader.hide-preloader {
+    display: none;
+}
+
 #preloader * {
     margin: 0 auto;
     text-align: center;
@@ -270,8 +274,7 @@ header {
 }
 
 .trillium-logo-main {
-    width: 100px;
-    padding: 10px;
+    width: 200px;
 }
 
 ul.main-navigation {
@@ -284,7 +287,7 @@ ul.main-navigation {
 ul.main-navigation > li > a {
     padding-left: 15px;
     text-transform: uppercase;
-    font-size: 0.7em;
+    font-size: 0.8em;
     letter-spacing: 4px;
     opacity: 0.7;
     padding: 15px;
@@ -300,7 +303,7 @@ ul.sub-nav {
     list-style-type: none;
     padding-left: 0px;
     background-color: #000;
-    font-size: 0.6em;
+    font-size: 0.7em;
     margin-top: 12px;
     
 }
@@ -344,6 +347,10 @@ section.main {
 
 div.section-content {
     position: absolute;
+}
+
+.relationships h2 {
+    display: block;
 }
 
 div.section-content {
@@ -396,6 +403,26 @@ div.part2 div {
     color: #ccc;
     padding: 20px;
     padding-bottom: 50px;
+    text-align: center;
+}
+
+.how-we-work p {
+
+}
+
+.work-with-us-CTA {
+    background-color: #3481c5;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 0.9em;
+    margin: 20px;
+
+}
+
+.ocean-climate-space {
+    font-weight: 800;
+    color: #3481c5;
 }
 
 .section-1-moon div.section-content {
@@ -421,9 +448,24 @@ div.part2 div {
 }
 
 .asteroid {
+/*
     max-width:40%;
     right: 5%;
-    top:25%;
+    top:30%;
+*/
+    
+    width: 450px;
+}
+
+.asteroid-box {
+/*    position: relative;*/
+}
+
+.asteroid-box  {
+    position: absolute;
+    max-width:40%;
+    right: 15%;
+    top: 30%;
 }
 
 div.section-content.fuelpod-ultrascope-text {
@@ -452,6 +494,11 @@ div.section-content.health-of-an-ecosystem-text {
 
 .black-background {
     background-color: rgba(30,30,30,0.87);
+}
+
+.logo-bg {
+    position: absolute;
+    left: 0;
 }
 
 .nav-CTA {
@@ -540,6 +587,27 @@ div.section-content.health-of-an-ecosystem-text {
     margin: 0px;
 }
 
+p {
+    color: #ccc;
+}
+
+.team-bios h3 {
+    font-family: 'ailerons';
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8em;
+    margin: 10px 0px;
+}
+
+.team-bios div {
+    margin: 30px 0px 70px 0px;
+}
+
+.emphasize {
+    color: cadetblue;
+    font-weight: 800;
+}
+
 .project-badge p {
     color: #fff;
     margin: 5px 2px;
@@ -557,6 +625,31 @@ div.section-content.health-of-an-ecosystem-text {
     text-align: right;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
+    font-size: 0.7em;
+}
+
+div.space-glass-badge div:nth-child(2) {
+    background-color: #483439;
+}
+
+div.dropfab-badge div:nth-child(2) {
+    background-color: #3E4F6B;
+}
+
+div.fuelpod-badge div:nth-child(2) {
+    background-color: #911D18;
+}
+
+div.octotalk-badge div:nth-child(2) {
+    background-color: #1D284B;
+}
+
+div.phi-badge div:nth-child(2) {
+    background-color: #5579A8;
+}
+
+div.osa-badge div:nth-child(2) {
+    background-color: #222;
 }
 
 .project-badge div:nth-child(2):hover {
@@ -576,6 +669,16 @@ div.section-content.health-of-an-ecosystem-text {
 .ultrascope-badge {
     bottom: 1%;
     right: 1%;
+}
+
+#ultrascope {
+    position: relative;
+    top: -650px;
+}
+
+#fuelpod {
+    position: relative;
+    top: -550px;
 }
 
 .fuelpod-badge {
@@ -647,6 +750,7 @@ div.onscreen {
 
 .relationships img {
     max-width: 200px;
+    width: 100%;
 }
 
 .relationships > div {
@@ -725,12 +829,12 @@ h1.future-where-text {
     opacity: 0.6;
 }
 
+
 div.section-content.explore-monitor-protect-text {
     top: 90%;
 }
 
 .trillium-footer {
-    margin-top: 50px;
     background-color: #222;
     padding: 10px;
     padding-top:20px;
@@ -834,7 +938,12 @@ p.copyright {
 
 .team-member {
     position: absolute;
-    right: 0;
+    right: 10%;
+    bottom:30%;
+    background-color: rgba(20,20,20,0.87);
+    padding: 10px;
+    border: 1px solid #3481c5;
+    box-shadow: 0px 0px 20px #3481c5;
 }
 
 .team-member h4 {
@@ -843,6 +952,45 @@ p.copyright {
     font-weight: normal;
     font-size: 1.1em;
     letter-spacing: 2px;
+    margin: 0px;
+    padding: 0px
+        
+}
+
+.header-buffer {
+    padding-top: 100px;
+}
+
+h1.team-title {
+    color: #fff;
+}
+
+.content-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.team-title h2 {
+    margin: 0px 100px;
+    color: #fff;
+    padding-top: 50px;
+    font-family: 'ailerons';
+    letter-spacing: 5px;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+.team-member h5 {
+    padding: 0px;
+    margin: 0px;
+    color: rgba(255,255,255,0.56);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: normal
 }
 
 .astro-holder:nth-child(1) .team-member {
@@ -874,6 +1022,79 @@ p.copyright {
 .contact-us h3, .contact-us p {
     color: #ddd;
 }
+
+.designers-and-engineers {
+    font-size: 2.4em;
+    margin: .4em 0 .2em 0;
+    border-top: 3px dotted #333;
+    border-bottom: 3px dotted #333;
+    padding: 100px 0px;
+    /*font-family: robotolight;*/
+}
+
+div.content.part2.designers-and-engineers-container div {
+    width: 80%;
+}
+
+#partners p {
+    color: rgba(255,255,255,0.87);
+}
+
+@-webkit-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-moz-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-o-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+
+.scuba-divers {
+    -webkit-animation: diverBob 6s infinite; /* Safari 4+ */
+    -moz-animation:    diverBob 6s infinite; /* Fx 5+ */
+    -o-animation:      diverBob 6s infinite; /* Opera 12+ */
+    animation:         diverBob 6s infinite; /* IE 10+, Fx 29+ */
+
+    animation-timing-function: ease;
+}
+
+
+
+@-webkit-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-moz-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-o-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+
+
+.asteroidz {
+    -webkit-animation: diverBob 6s infinite; /* Safari 4+ */
+    -moz-animation:    diverBob 6s infinite; /* Fx 5+ */
+    -o-animation:      diverBob 6s infinite; /* Opera 12+ */
+    animation:         diverBob 6s infinite; /* IE 10+, Fx 29+ */
+
+    animation-timing-function: ease;
+}
+
 
 
 /* ==========================================================================
