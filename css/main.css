@@ -10,115 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-#loader-wrapper .loader-section {
-        position: fixed;
-        top: 0;
-        width: 51%;
-        height: 100%;
-        background: #222222;
-        z-index: 1000;
-        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: translateX(0);  /* IE 9 */
-        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
-    }
-
-    #loader-wrapper .loader-section.section-left {
-        left: 0;
-    }
-
-    #loader-wrapper .loader-section.section-right {
-        right: 0;
-    }
-
-    /* Loaded */
-    .loaded #loader-wrapper .loader-section.section-left {
-        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(-100%);  /* IE 9 */
-                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
-
-        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
-                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    }
-
-    .loaded #loader-wrapper .loader-section.section-right {
-        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(100%);  /* IE 9 */
-                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
-
--webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
-        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    }
-    
-    .loaded #loader {
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;  
-                transition: all 0.3s ease-out;
-    }
-    .loaded #loader-wrapper {
-        visibility: hidden;
-
-        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateY(-100%);  /* IE 9 */
-                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
-
-        -webkit-transition: all 0.3s 1s ease-out;  
-                transition: all 0.3s 1s ease-out;
-    }
-    
-    /* JavaScript Turned Off */
-    .no-js #loader-wrapper {
-        display: none;
-    }
-    .no-js h1 {
-        color: #222222;
-    }
-
-    #content {
-        margin: 0 auto;
-        padding-bottom: 50px;
-        width: 80%;
-        max-width: 978px;
-    }  
-
-
-#loading-line {
-    width:100%;
-    height:5px;
-    background-color:#00F;
-}
-
-#loading-percent {  
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    position: absolute;
-    top: 20%;
-    right: 48%;
-}
-
-#myBar {
-    width:100%;
-    height:5px;
-    background-color: darkturquoise;
-}
-
-#label {
-    color: #fff;
-    top: 125px;
-    position: relative;
-    font-size: 2em;
-}
-
-#myProgress {
-  position: relative;
-  width: 100%;
-  height: 30px;
-  background-color: #ddd;
-}
-
-#myBar {
-  position: absolute;
-}
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -126,24 +17,9 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-    
-/*
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: fixed;
-    background-color: #111;
-    z-index: 1000;
-    
-    transition: height 1s ease; 
-*/
 }
 
-/*
-.pace-inactive {
-    height: 0%;
-}
-*/
+
 
 .pace.pace-inactive .pace-progress {
   display: none;
@@ -161,10 +37,10 @@
     -ms-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
 /*    background-image: url('../img/ring.gif');*/
-}
 
+}
 .pace .pace-progress:after {
-  display: block;
+   display: block;
     position: relative;
     top: 70px;
     content: attr(data-progress-text);
@@ -180,6 +56,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -322,6 +199,7 @@ header {
     background-color: #111;
     width: 100%;
     z-index: 1000;
+
 }
 
 #preloader {
@@ -348,7 +226,7 @@ header {
     height: 100%;
     text-align: right;
     width: 100%;
-} 
+}
 
 #preloader.preloader-complete * {
     opacity: 0;
@@ -400,7 +278,7 @@ ul.sub-nav {
     background-color: #000;
     font-size: 0.7em;
     margin-top: 12px;
-    
+
 }
 
 ul.main-navigation li:hover ul.sub-nav{
@@ -522,7 +400,7 @@ section.main img.sectionBG {
 }
 
 form.mission-form *{
-    color: #fff; 
+    color: #fff;
     font-size: 1.2em;
 }
 
@@ -636,7 +514,7 @@ div.part2 div {
 
 .section-1-moon div.section-content {
     top: 70%;
-} 
+}
 
 .space-glass-circle {
     max-width:400px;
@@ -662,7 +540,7 @@ div.part2 div {
     right: 5%;
     top:30%;
 */
-    
+
     width: 450px;
 }
 
@@ -678,7 +556,7 @@ div.part2 div {
 }
 
 div.section-content.fuelpod-ultrascope-text {
-    top: 95%;
+    top: 99%;
 }
 
 div.section-content.health-of-an-ecosystem-text {
@@ -719,7 +597,7 @@ div.section-content.health-of-an-ecosystem-text {
     letter-spacing: 4px;
     opacity: 0.9;
     margin-left: 10px;
-    
+
 }
 
 .margin-bubble {
@@ -728,15 +606,15 @@ div.section-content.health-of-an-ecosystem-text {
 }
 
 .project-badge {
-    
+
     text-align: left;
     max-width: 250px;
-    
+
     border-left: 3px solid #fff;
     border-right: 3px solid #fff;
     font-size: 0.8em;
     position: absolute;
-    
+
 }
 
 .project-badge:before {
@@ -880,15 +758,16 @@ div.osa-badge div:nth-child(2) {
     right: 1%;
 }
 
-#ultrascope {
+/*#ultrascope {
     position: relative;
     top: -650px;
 }
 
 #fuelpod {
     position: relative;
-    top: -550px;
-}
+    top: -600px;
+}*/
+
 
 .fuelpod-badge {
     bottom: 1%;
@@ -923,6 +802,328 @@ div.osa-badge div:nth-child(2) {
 .all-partners {
     width: 100%;
 
+
+}
+
+/*Secondary styles START */
+
+.secondary-container {
+    top:0;
+    left:100%;
+
+    width:100%;
+    margin-left:0;
+    padding-right:0;
+    background-color:#111;
+
+
+}
+
+section.secondary {
+
+  height: 100vh; /* Default secondary height, set precise h in spec. class */
+  /*border:2px solid white;*/
+  color:white;
+  margin-top:50px;
+
+}
+
+/*@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)  {
+    section.secondary{
+      height:800px;
+    }
+}*/
+
+section.secondary-1-moon {
+  height:400px;
+}
+
+section#secondary-3-BSQ{
+  background-color: #161827;
+}
+
+section#secondary-4-horizon{
+  height:200px;
+  background-color: #242A38;
+}
+
+section#secondary-5-dropfab{
+  background-color:#344058;
+}
+
+section#secondary-6-ultrascope{
+
+  background-color:#7A6468;
+}
+
+section#secondary-7-fuelpod{
+  background-color:#B08C6B;
+}
+
+section#secondary-8-shore{
+  height:40px;
+  background-color:#4897C8;
+}
+
+section#secondary-9-octotalk{
+  background-color:#166AAB;
+}
+
+section#secondary-10-coast {
+  height:650px;
+  background-color:#0072A9;
+
+}
+
+section#secondary-11-phi{
+  background-color:#AEB1C0;
+}
+
+section#secondary-12-osa{
+  background-color:#161827;
+}
+
+section#secondary-13-mavericks{
+  background-color:black;
+}
+
+.secondary-project-title{
+  /*position:absolute;*/
+  /*background-image: url("../img/dropfab-title.png");
+  background-repeat: no-repeat;
+  background-position: center top;*/
+
+
+  /*width:8%;*/
+  height:inherit;
+  background-color: #fff;
+  display:inline-block;
+  text-align: center;
+  /*margin:0;
+  padding:0;*/
+}
+
+.secondary-project-title img{
+  margin-top:50px;
+  /*margin-left:32%;*/
+  width:30%;
+
+}
+
+.secondary-project-title a{
+  color: rgba(0,0,0,0.4);
+  font-size: 0.7em;
+  text-align: center;
+  margin-left:15px;
+  margin-top:5px;
+}
+
+.secondary-project-title a:hover{
+
+}
+
+
+.secondary-project-desc{
+  /*position:absolute;
+  left:7%;*/
+  background-color:#F4F7F9;
+  height:inherit;
+  /*width:29%;*/
+  /*display:inline-block;*/
+
+  /*padding:0;*/
+
+
+}
+
+.secondary-project-desc h1{
+  font-family: 'robotolight';
+  text-align: left;
+  color:rgba(0,0,0,0.9);
+  margin-left:30px;
+  margin-top:3%;
+  margin-bottom:5px;
+  letter-spacing:2px;
+  font-size:1.2em;
+  font-weight: BOLD;
+
+}
+
+.secondary-project-desc p{
+  font-family: 'robotolight';
+  text-align: left;
+  color:rgba(0,0,0,0.7);
+  font-size:0.8em;
+  margin:0 70px 15px 30px;
+  font-weight: BOLD;
+
+}
+.stats{
+  padding-top:20px;
+  margin-left:30px;
+}
+.statbox{
+  margin-bottom:20px;
+}
+.statnumber{
+  display:inline-block;
+  background-color:#e4ecec;
+  height:55px;
+  width:55px;
+
+  text-align: center;
+
+
+}
+.statnumber p{
+  font-family:'ailerons';
+  letter-spacing:-10px;
+  font-size:2.2em;
+    text-align: center;
+    margin:0 10px 0 0 ;
+    color:rgba(0,0,0,0.5);
+}
+
+.stattext{
+
+  display: inline-block;
+  margin-top: -15px;
+
+}
+.shrink{
+  font-size:0.7em !important;
+}
+.stattext p{
+  /*font-family:'ailerons';*/
+    color:rgba(0,0,0,0.6);
+    font-size:1em;
+    margin: -15px 0 0 20px;
+
+    letter-spacing:1px;
+}
+
+.mission-partners{
+  /*text-align:center;*/
+  margin-top:15px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.mission-partners img{
+
+
+/*padding:3px;*/
+  height:100%;
+}
+
+.secondary-project-gallery{
+  /*position:absolute;
+  left:36.7%;*/
+
+  background-color:#4a7395;
+  /*background-image:url(../img/projectBackground.jpg);*/
+  /*background-size:cover;*/
+  /*width:66%;*/
+  height:inherit;
+  display:inline-block;
+  /*margin-left:-50px;*/
+  /*z-index:1;*/
+
+  /*border:solid rgba(255,255,255,0.5) 5px;*/
+}
+
+.invisiBorder{
+  position:absolute;
+
+  background-color:rgba(255,255,255,0.3);
+  width: 50px;
+  height:100vh;
+  z-index:10;
+}
+
+.gallery{
+  position:absolute;
+  z-index:0;
+  width:inherit;
+  height:inherit;
+  overflow:hidden;
+  background-size: auto 100%;
+  background-position:50%;
+  background-repeat:no-repeat;
+
+  display:none;
+  text-align: center;
+
+
+}
+.youtube-embed{
+  margin-top:50px;
+}
+
+.project-scroll-back {
+  position:absolute;
+  left:96%;
+  margin-top:10px;
+  z-index:111;
+
+}
+
+.project-next{
+
+position:relative;
+
+}
+.project-nav{
+  position:
+}
+
+.project-nav a{
+
+}
+
+.secondary-project-gallery a:hover{
+  text-decoration: underline;
+}
+
+.secondary-project-gallery a{
+
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.gallery-1{
+
+}
+
+.gallery-2{
+  display: none;
+}
+
+.gallery-3{
+  display: none;
+}
+
+.gallery-thumbs{
+
+  position:relative;
+  top:85%;
+  /*bottom:20px;*/
+  left:25px;
+  float:right;
+  margin-right:25px;
+}
+.gallery-thumbs li{
+  cursor:pointer;
+  display:inline;
+  margin:10px;
+
+}
+.gallery-thumbs li img{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  height:70px;
+  z-index:100;
 }
 
 .overlay {
@@ -937,6 +1138,7 @@ div.osa-badge div:nth-child(2) {
 
 div.onscreen {
     left: 0;
+
 }
 
 
@@ -955,6 +1157,7 @@ div.onscreen {
 .relationships {
     margin: 0px 70px;
     padding: 100px 0px;
+    text-align: center;
 }
 
 .relationships img {
@@ -965,6 +1168,7 @@ div.onscreen {
 .relationships > div {
     position: relative;
 }
+
 
 .plus {
     position: absolute;
@@ -1015,7 +1219,7 @@ div.onscreen {
     font-size: 1.7em;
     display: block;
     letter-spacing: 5px;
-    
+
     font-weight: normal;
     text-transform: uppercase;
     font-style: normal;
@@ -1099,7 +1303,7 @@ ul.footer-missions, ul.footer-about {
 }
 .footer-missions li, .footer-about li {
 
-    padding: 1px 0px; 
+    padding: 1px 0px;
 }
 
 .footer-missions li a:hover, .footer-about li a:hover {
@@ -1119,7 +1323,7 @@ ul.footer-missions, ul.footer-about {
     /*bottom: 20px;
     right: 20px;*/
 
-    
+
 }
 
 .trillium-footer-about {
@@ -1127,10 +1331,10 @@ ul.footer-missions, ul.footer-about {
 }
 
 p.copyright {
-    font-size: 0.7em; 
+    font-size: 0.7em;
     color: #bbb;
     letter-spacing: 1px;
-    padding: 10px 0px; 
+    padding: 10px 0px;
 }
 
 .team img.astronaut {
@@ -1138,7 +1342,9 @@ p.copyright {
 }
 
 .team {
-    padding: 100px 50px 100px 0px; 
+
+    padding: 100px 50px 100px 0px;
+
 }
 
 .astro-holder {
@@ -1163,7 +1369,7 @@ p.copyright {
     letter-spacing: 2px;
     margin: 0px;
     padding: 0px
-        
+
 }
 
 .header-buffer {
@@ -1202,12 +1408,17 @@ h1.team-title {
     font-weight: normal
 }
 
+.team-member h5{
+  color:rgba(255,255,255,0.5);
+  margin-top:-20px;
+}
+
 .astro-holder:nth-child(1) .team-member {
     right: 20%;
 }
 
 .astro-holder:nth-child(6) .team-member {
-    
+
 }
 
 .main-content {
@@ -1217,7 +1428,7 @@ h1.team-title {
 .contact-us {
     width: 75%;
     margin: 0 auto;
-    padding: 100px 0px; 
+    padding: 100px 0px;
 }
 
 .contact-us-left > div{
@@ -1229,7 +1440,33 @@ h1.team-title {
 }
 
 .contact-us h3, .contact-us p {
-    color: #ddd;
+    color: rgba(255,255,255,0.8);
+}
+
+.contact-us h3{
+  font-family:"Ailerons";
+    color: rgba(255,255,255,1);
+  font-size:2.2em;
+  font-weight:200;
+  /*margin-top:0px;*/
+  margin-bottom:-15px;
+  letter-spacing:1px;
+
+
+}
+
+.contact-us p{
+font-size:1.3em;
+}
+.contact-us img{
+  width:45px;
+  margin:15px;
+  margin-top:0;
+  margin-left:0;
+}
+
+.contact-us img:hover{
+  opacity:0.8;
 }
 
 .designers-and-engineers {
@@ -1241,12 +1478,36 @@ h1.team-title {
     /*font-family: robotolight;*/
 }
 
+
 div.content.part2.designers-and-engineers-container div {
     width: 80%;
+
 }
 
 #partners p {
     color: rgba(255,255,255,0.87);
+}
+
+
+.hamburger {
+    position: absolute;
+    top: 8px;
+    right: 46px;
+    display: none;
+    right: 15px;
+}
+
+ul.main-navigation.hidden {
+    display: none;
+}
+
+.pure-u-1-6 {
+    min-width: 100px;
+}
+
+.pure-u-1-2 {
+    min-width: 400px;
+
 }
 
 @-webkit-keyframes diverBob {
@@ -1476,24 +1737,88 @@ div.content.part2.designers-and-engineers-container div {
     }
 }
 
-@media screen and (min-width: 1920px) {
-    .partners-heading {
+@media screen and (max-width: 1920px) {
+    /*.partners-heading {
         width: 100%;
         text-align: center;
-    }
+    }*/
 }
 
-@media screen and (min-width: 1440px) {
-    
+
+@media screen and (max-width: 1440px) {
+  .secondary-project-desc h1{
+    font-size:0.8em;
+  }
+  .secondary-project-desc h1:first-child{
+    margin-top:50px;
+  }
+
+  .secondary-project-desc p{
+    font-size:0.65em;
+  }
+  .statnumber{
+    width:35px;
+    height:35px;
+  }
+  .statnumber p{
+    font-size:1.6em;
+    letter-spacing:-2px;
+  }
+  .stattext p{
+    font-size:0.8em;
+  }
+  .mission-partners h1{
+    margin-top:10px !important;
+  }
+  .stats{
+    padding-top:5px;
+  }
+  .gallery-thumbs li img{
+    height:50px;
+  }
+  /*.mission-partners img{
+
+    max-width: 80px;
+  }*/
+
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .bsquare-box {
         left: -300px;
     }
+    .secondary-project-desc h1{
+      font-size:0.8em;
+    }
+    .secondary-project-desc h1:first-child{
+      margin-top:50px;
+    }
+
+    .secondary-project-desc p{
+      font-size:0.7em;
+    }
+    .statnumber{
+      width:35px;
+      height:35px;
+    }
+    .statnumber p{
+      font-size:1.6em;
+      letter-spacing:-2px;
+    }
+    .stattext p{
+      font-size:0.8em;
+    }
+    .mission-partners {
+      margin-top:10px !important;
+    }
+    .stats{
+      padding-top:5px;
+    }
+
+
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .section-2-ISS {
         min-height: 550px;
     }
@@ -1518,9 +1843,38 @@ div.content.part2.designers-and-engineers-container div {
     .section-9-atmosphere {
         min-height: 600px;
     }
+
+
+    .secondary-project-desc h1{
+      font-size:1em;
+    }
+    .secondary-project-desc h1:first-child{
+      margin-top:50px;
+    }
+
+    .secondary-project-desc p{
+      font-size:0.7em;
+    }
+    .statnumber{
+      width:35px;
+      height:35px;
+    }
+    .statnumber p{
+      font-size:1.6em;
+      letter-spacing:-2px;
+    }
+    .stattext p{
+      font-size:0.6em;
+    }
+    .mission-partners h1{
+      margin-top:10px !important;
+    }
+    .stats{
+      padding-top:5px;
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .bsquare-box {
         left: -500px;
     }
@@ -1599,24 +1953,254 @@ div.content.part2.designers-and-engineers-container div {
         width: 80%;
         margin: 0 auto;
     }
-    
+
+    .pure-u-1-6.extrafooter {
+        display: none;
+    }
+    .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
+        width:22%;
+    }
+
+
 }
 
-@media screen and (min-width: 600px) {
-    
-}
 
-@media screen and (min-width: 425px) {
-    .ul.sub-nav {
+@media only screen and (max-width: 600px) {
+    ul.sub-nav {
         display: block;
         position: relative;
     }
+
 }
 
-@media screen and (min-width: 375px) {
-    
+@media screen and (max-width: 425px) {
+    .section-1-moon {
+        min-height: 200px;
+    }
+    ul.nav {
+        display: block;
+        position: relative;
+    }
+    ul.sub-nav {
+        display: block;
+        position: relative;
+    }
+    ul.main-navigation > li {
+        display: block;
+    }
+    ul.main-navigation {
+        margin-top: 0px;
+        background-color: #000;
+        padding: 0px;
+    }
+    ul.sub-nav {
+        margin-top: 5px;
+    }
+    ul.sub-nav li {
+        margin: 10px;
+    }
+    ul.main-navigation > li {
+        margin-top: 15px;
+    }
+    ul.main-navigation > li > a {
+        opacity: 0.9;
+    }
+    .nav-CTA {
+        margin-left: 0px;
+    }
+    ul.main-navigation {
+
+    }
+    .building-a-future {
+        width: 180px;
+    }
+    .section-2-ISS {
+        min-height: 230px;
+    }
+    div.section-content#whisky-in-space {
+        top: 10%;
+    }
+    .future-animation {
+        /*        data-translatey="250";*/
+    }
+    .section-2-ISS {
+        min-height: 200px;
+    }
+    .section-3-BSQ {
+        min-height: 200px;
+    }
+    .section-4-horizon {
+        min-height: 130px;
+    }
+    .section-5-village {
+        min-height: 280px;
+    }
+    .section-6-shore {
+        min-height: 200px;
+    }
+    .section-7-underwater {
+        min-height: 180px;
+    }
+    .section-8-coast {
+        min-height: 200px;
+    }
+    .section-9-atmosphere {
+        min-height: 190px;
+    }
+    .designers-and-engineers {
+        font-size: 1.4em;
+        padding: 60px 0px;
+    }
+    div.part2 {
+        padding: 40px 0px;
+    }
+    .relationships {
+        margin: 0px 20px;
+        padding: 30px 0px;
+    }
+    .footer-trillium-logo {
+        max-width: 200px
+    }
+    .asteroid {
+        width: 170px;
+    }
+    .text-small {
+        font-size: 0.9em;
+    }
+    .text-medium {
+        font-size: 1em;
+        letter-spacing: 3px;
+    }
+    .project-badge p {
+        margin: 0px 2px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .bsquare-box {
+        left: -930px;
+    }
+    .project-badge div:nth-child(1) p {
+        display: none;
+    }
+    #bsquare {
+        z-index: 2000;
+        width: 60px;
+        height: 60px;
+    }
+    div.section-content.science-advanced-by-citizens {
+        top: 0%;
+    }
+    .fuelpod-ultrascope-text h1{
+        background-color: rgba(0,0,0,0.5);
+    }
+    div.section-content.fuelpod-ultrascope-text {
+        top: 105%;
+    }
+    div.section-content.explore-monitor-protect-text {
+        top: 80%;
+    }
+    div.section-content.health-of-an-ecosystem-text {
+        top: 33%;
+    }
+    .phi-badge {
+        top: 70%
+    }
+    .osa-badge {
+        top: 65%;
+    }
+    div.section-content.where-everyone-text {
+        top: 33%;
+    }
+    .asteroid-box {
+        top: 0%;
+    }
+    .section-content.mavericks-lab-text {
+        top: 30%;
+    }
+    .mavericks-lab-badge {
+        top: 80%;
+    }
+
+    .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
+        width:50%;
+    }
+    ul.main-navigation li:hover ul.sub-nav li a {
+        padding: 0px 15px;
+    }
+    div.pure-u-1-6 {
+        width: 33%;
+    }
+    .pure-u-1-2 {
+        min-width: 100%;
+    }
+    .project-badge div {
+        padding: 2px;
+    }
+    .project-badge {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+    .project-badge:before, .project-badge:after, .project-badge div:after, .project-badge div:before {
+        height: 1px;
+        color: #ddd;
+    }
+    .project-badge div {
+        margin: 3px;
+    }
+
+
 }
 
-@media screen and (min-width: 320px) {
-    
+
+@media screen and (max-width: 375px) {
+
+    .bsquare-box {
+        left: -1000px;
+    }
+    .section-2-ISS {
+        min-height: 180px;
+    }
+    .section-3-BSQ {
+        min-height: 180px;
+    }
+    .section-4-horizon {
+        min-height: 100px;
+    }
+    .section-5-village {
+        min-height: 240px;
+    }
+    .section-6-shore {
+        min-height: 180px;
+    }
+    .section-7-underwater {
+        min-height: 160px;
+    }
+    .section-8-coast {
+        min-height: 180px;
+    }
+    .section-9-atmosphere {
+        min-height: 170px;
+    }
+    .building-a-future {
+        width: 150px;
+    }
+    .text-small {
+        font-size: 0.8em;
+        margin: 0px;
+        letter-spacing: 1px;
+    }
+    .text-medium {
+        font-size: 0.9em;
+        letter-spacing: 2px;
+    }
+    .asteroid {
+        width: 116px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+
 }

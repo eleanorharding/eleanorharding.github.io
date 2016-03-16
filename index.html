@@ -15,53 +15,22 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-        
-        
+
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        
+
         <section id="preloader">
             <div>
-                <!-- <div class="loader-section section-left"></div>
-                <div class="loader-section section-right"></div> -->
-<!--                <div id="loading-line"></div>-->
-<!--
-                <div id="myBar">
-                  </div>
--->
                 <div class="preloader-content">
-<!--                    <div id="label">0%</div>-->
-                     <img src="img/ring.gif"/> 
-<!--                    <p> Loading </p>-->
-                    
-                    
+
+                     <img src="img/ring.gif"/>
                 </div>
             </div>
         </section>
-        
-        <script type="text/javascript">
 
-//                var elem = document.getElementById("myBar"); 
-//                var width = 10;
-//                var id = setInterval(frame, 40);
-//                function frame() {
-//                    if (width >= 96) {
-//                        clearInterval(id);
-//                    } else {
-//                        width++; 
-//                        elem.style.width = width + '%'; 
-//                        document.getElementById("label").innerHTML = width * 1 + '%';
-//                    }
-//                }
-            
-        
-        </script>
-        
-        
-                
-                
-                
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -69,8 +38,11 @@
         <header>
             <a href="http://localhost/git/trillium-technologies/#" class="trillium-logo-main-container"><img src="img/trillium-logo-header.png" class="trillium-logo-main" alt="Trillium Technology"/></a>
             <!-- <img src="img/logo-bg.png" class="logo-bg"/> -->
+            <div class="hamburger" onclick="toggleMenuVisibility()"><img src="img/menu.png" /></div>
             <ul class="main-navigation">
-                <li> <a href="#">Missions</a> 
+
+                <li> <a href="#">Missions</a>
+
                     <ul class="sub-nav">
                         <li> <a href="#space-glass">Space Glass</a>  </li>
                         <li> <a href="#b-squares">B-Squares</a>  </li>
@@ -99,15 +71,14 @@
             </ul>
         </header>
 
-        
 
         <section class="main section-1-moon">
             <img class="sectionBG" src="img/section-1-moon.jpg"/>
             <div class="section-content" id="top-section">
-                
+
                 <div class="scrollme">
                     <div
-                        class="animateme"
+                        class="animateme future-animation"
                         data-when="enter"
                         data-from="0.5"
                         data-to="1"
@@ -121,26 +92,36 @@
             </div>
         </section>
 
+
         <section class="main section-2-ISS" id="space-glass">
+
             <img src="img/section-2-ISS.jpg" class="sectionBG"/>
             <img src="img/space-glass.png" class="fixed space-glass-circle wow zoomIn" data-wow-duration="1s"/>
 
             <div class="project-badge space-glass-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
                     <h3> Space Glass </h3>
                     <p> The first whisky glass engineered and tested in Microgravity </p>
                 </div>
                 <div>
+                  <a class="project-link" href="#secondary-2-ISS">
                     <p> VIEW PROJECT &#8594;</p>
+                  </a>
                 </div>
+
             </div>
 
+
             <div class="section-content " id="whisky-in-space">
-                <!-- <img src="img/space-tourists.png" class="space-tourists wow fadeInUp"/> --> 
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> 
-                    <span class="text-small"> Space tourists can enjoy </span> 
+
+                <!-- <img src="img/space-tourists.png" class="space-tourists wow fadeInUp"/> -->
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <span class="text-small"> Space tourists can enjoy </span>
+
                     <span class="text-medium">whisky in zero-G</span>
                 </h1>
+
             </div>
         </section>
 
@@ -148,19 +129,24 @@
             <img src="img/section-3-BSQ.jpg" class="sectionBG"/>
             <img src="img/ISS-interior.png" class="fixed b-square-circle wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"/>
 
+
             <div class="project-badge b-squares-badge wow fadeInDown" id="b-squares-badge" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
                     <h3> B Squares</h3>
                     <p> A modular electronics system enabling customized devices that clip together. </p>
                 </div>
                 <div>
+                  <a class="project-link" href="#secondary-3-BSQ">
                     <p> VIEW PROJECT &#8594; </p>
+                  </a>
                 </div>
             </div>
 
             <div class="section-content bsquarestext" id="bsquares-text">
-                <h1 class="wow fadeInUp story black-background" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; 
+                <h1 class="wow fadeInUp story black-background" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
                     <span class="text-small">...Where anyone can </span>
+
                     <span class="text-medium">build and deploy a nanoSatellite </span>
                     <span class="text-small">in seconds </span>
                 </h1>
@@ -171,14 +157,17 @@
 
         <section class="main section-4-horizon" id="section-4-horizon">
             <img src="img/section-4-horizon.jpg" class="sectionBG"/>
-            <div class="section-content">
-                
+
+            <div class="section-content science-advanced-by-citizens">
+
+
                 <h1 class="wow fadeInUp story future-where-text" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
                     <span class="text-small">A future where </span>
                     <span class="text-medium">science is advanced by citizens </span>
                     <span class="text-small margin-bubble">and </span>
                     <span class="text-medium">the tech for citizen science can be fabricated anywhere</span>
                 </h1>
+
 
             </div>
             <div class="scrollme bsquare-box">
@@ -201,34 +190,60 @@
             <img src="img/section-5-village.jpg" class="sectionBG"/>
 
             <div class="project-badge dropfab-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
                     <h3> Dropfab </h3>
+                    <!-- <a class="project-link" href="#secondary-5-dropfab"> -->
                     <p> A self-contained deployable Fablab facility for building open hardware technologies to enable citizen science across the globe. </p>
+
                 </div>
                 <div>
+
+                  <a class="project-link" href="#secondary-5-dropfab">
                     <p> VIEW PROJECT &#8594; </p>
+                  </a>
                 </div>
             </div>
-            <div id="ultrascope"></div>
-            <div class="project-badge ultrascope-badge wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s" onclick="showUltrascopeOverlay()">
+
+
+            <div id="ultrascope" class="project-badge ultrascope-badge wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
                     <h3> ULTRASCOPE</h3>
                     <p> An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids. </p>
                 </div>
+
                 <div>
+                  <a class="project-link" href="#secondary-6-ultrascope">
                     <p> VIEW PROJECT &#8594; </p>
+                  </a>
                 </div>
+
+
             </div>
 
-            <div id="fuelpod"></div>
-            <div class="project-badge fuelpod-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
+            <div class="overlay offscreen" id="ultrascope-overlay" onclick="showUltrascopeOverlay()">
+                <img src="img/overlays/ultrascope-overlay.jpg" />
+            </div>
+
+
+
+            <div id="fuelpod" class="project-badge fuelpod-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
+
                 <div>
                     <h3> Fuelpod</h3>
                     <p> A robust rapid deployment smart energy microgrid for disaster response. </p>
                 </div>
+
                 <div>
+                  <a class="project-link" href="#secondary-7-fuelpod">
                     <p> VIEW PROJECT &#8594; </p>
+                  </a>
                 </div>
+
+
             </div>
 
             <div class="section-content fuelpod-ultrascope-text">
@@ -246,7 +261,7 @@
             <img src="img/section-6-shore.jpg" class="sectionBG"/>
 
             <div class="section-content explore-monitor-protect-text">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; 
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
                 <span class="text-small">...A future where we </span>
                 <span class="text-medium">explore, monitor & protect our oceans... </span>
                 </h1>
@@ -258,18 +273,22 @@
             <img src="img/scuba.png" class="fixed scuba-divers"/>
 
             <div class="project-badge octotalk-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
                     <h3> OCTOTALK </h3>
-                    <p> A revolutionary underwater communication technology that allows divers to speak freely to other divers and drones. 
+                    <p> A revolutionary underwater communication technology that allows divers to speak freely to other divers and drones.
                     </p>
                 </div>
                 <div>
+                  <a class="project-link" href="#secondary-9-octotalk">
                     <p> VIEW PROJECT &#8594; </p>
+                  </a>
                 </div>
+
             </div>
 
             <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; 
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
                     <span class="text-small">Where </span>
                     <span class="text-medium">divers can communicate underwater</span>
                     <span class="text-small">to enhance the study and protection of the oceans</span>
@@ -282,18 +301,21 @@
             <img src="img/section-8-coast.jpg" class="sectionBG"/>
 
             <div class="project-badge phi-badge wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
                     <h3> PHI </h3>
                     <p> The Planetary Health Index (PHI) is a platform for measuring and assessing the ecological health of nature - AKA -natural capital - enabling better stewardship of our planet.  </p>
                 </div>
                 <div>
+                  <a class="project-link" href="#secondary-11-phi">
                     <p> VIEW PROJECT &#8594; </p>
+                  </a>
                 </div>
             </div>
 
 
             <div class="section-content health-of-an-ecosystem-text">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; 
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
                 <span class="text-small">...And </span>
                 <span class="text-medium">the health of an ecosystem </span>
                 <span class="text-small">can be determined in realtime </span>
@@ -305,18 +327,22 @@
             <img src="img/section-9-atmosphere.jpg" class="sectionBG"/>
 
             <div class="project-badge osa-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
                     <h3> THE OPEN SPACE AGENCY </h3>
                     <p> Dedicated to unlocking the talent, insight and creativity of citizen space explorers around the world.  </p>
 
                 </div>
                 <div>
-                    <a href="http://openspaceagency.com" target="_blank"><p> VIEW PROJECT &#8594; </p></a>
+
+                    <a class="project-link" href="#secondary-12-osa"><p> VIEW PROJECT &#8594; </p></a>
+
                 </div>
+
             </div>
 
             <div class="section-content where-everyone-text">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; 
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
                 <span class="text-small">...Where everyone</span>
                 <span class="text-medium"> can have their own space program </span>
                 </h1>
@@ -324,7 +350,7 @@
         </section>
 
         <section class="main stars" id="mavericks-lab">
-            
+
             <img src="img/stars.jpg" class="sectionBG"/>
             <div class=" asteroid-box">
                 <div class="scrollme">
@@ -342,17 +368,26 @@
             </div>
 
             <div class="project-badge mavericks-lab-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
                 <div>
-                    <h3> Mavericks Lab </h3>
+
+                      <h3> Mavericks Lab </h3>
                     <p> An applied research accelerator for AI driven science.  </p>
+
                 </div>
                 <div>
-                    <a href="http://maverickslab.org" target="_blank"><p> VIEW PROJECT &#8594; </p></a>
+
+                  <a href="http://maverickslab.org" target="blank">
+                    <a class="project-link" href="#secondary-13-mavericks"><p> VIEW PROJECT &#8594; </p></a>
+                    </a>
+
                 </div>
             </div>
 
+
             <div class="section-content mavericks-lab-text">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; 
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+
                 <span class="text-small">...And </span>
                 <span class="text-medium">machine intelligence </span>
                 <span class="text-small">can be used to mine vast quantities of </span>
@@ -364,8 +399,8 @@
         <section class="starshine">
             <div class="content part2 designers-and-engineers-container">
                 <div>
-                    
-                    <h1 class="designers-and-engineers" > 
+
+                    <h1 class="designers-and-engineers" >
                         We're a team of designers and engineers dedicated to developing technology platforms that tackle grand challenges
                     </h1>
                 </div>
@@ -374,7 +409,8 @@
             <div class="content part2 how-we-work" id="how-we-work">
                 <div>
                     <h1 class="" > How We Work </h1>
-                    <p>  
+
+                    <p>
                         We are a systems technology company which develops innovative technologies and services in the areas where we believe to be the fundamental Grand Challanges of this era:
                     </p>
                     <p class="ocean-climate-space">
@@ -387,9 +423,9 @@
                         At the heart of how we work is Trillium's “Mission Oriented" approach.  Every system we build is built with a specific Mission objective in mind.   Whether it's a system to bring together <a href="#">Machine Learning experts and Planetary Scientists for planetary defense</a> or building an embedded <a href="#">Artificial Intelligence for ocean conservation and monitoring</a>, there's always a specific mission which drives us.
                     </p>
                     <p>
-                        We don't do it alone.  Part of our methodology requires that there's always one or more <a href="#">Mission Partners</a> who we work with to tackle these grand challenges.  In doing so we match our own expertise and passion in System Design and Systems Intelligence to the resources and objectives of a strong partnership network. 
+                        We don't do it alone.  Part of our methodology requires that there's always one or more <a href="#">Mission Partners</a> who we work with to tackle these grand challenges.  In doing so we match our own expertise and passion in System Design and Systems Intelligence to the resources and objectives of a strong partnership network.
                     </p>
-                    <br/> 
+                    <br/>
                     <a href="#"  class="work-with-us-CTA"> Work With Us </a>
                 </div>
             </div>
@@ -399,16 +435,22 @@
             <div class="pure-g relationships" id="partners">
 
                 <div class="partners-heading">
+
                     <h1> Partners </h1>
-                    <p> 
-                        We take a mission-centered approach, partnering with organisations interested in solving systemic problems and opportunities. 
+                    <p>
+                        We take a mission-centered approach, partnering with organisations interested in solving systemic problems and opportunities.
                     </p>
+
                     <br/>
                     <br/>
                 </div>
 
 
-                <!-- row 1 -->     
+
+
+
+                <!-- row 1 -->
+
                 <div class="pure-u-1-6">
                     <div class="plus TL"></div>
                     <div class="plus TR"></div>
@@ -453,7 +495,7 @@
                 </div>
 
 
-                <!-- row 2 -->  
+                <!-- row 2 -->
                 <div class="pure-u-1-6">
                     <div class="plus TL"></div>
                     <div class="plus TR"></div>
@@ -498,7 +540,7 @@
                 </div>
 
 
-                <!-- row 3 -->  
+                <!-- row 3 -->
                 <div class="pure-u-1-6">
                     <div class="plus TL"></div>
                     <div class="plus TR"></div>
@@ -549,9 +591,894 @@
                     <img src="img/partners/ballantines.png"/>
                 </div>
 
+
             </div>
 
         </section>
+
+
+        <div class="secondary-container fixed">
+                <!-- <section class="secondary secondary-1-moon">
+
+                </section> -->
+
+                <section class="secondary pure-g" id="secondary-2-ISS">
+                  <div class="secondary-project-title pure-u-2-24">
+
+                    <img src="img/projects/spaceglass/title.png"/>
+
+                    <div class="project-nav">
+
+                    <a href="#secondary-3-BSQ" class="inter-project project-next">&darr; NEXT &darr; </a>
+                    </div>
+                  </div>
+                  <div class="secondary-project-desc pure-u-6-24 ">
+                  <!-- <div class="pure-u-6-24 "> -->
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                    An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>30</p>
+                      </div>
+                      <div class="stattext">
+                        <p>3D PRINTED PROTOTYPES</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>14</p>
+                      </div>
+                      <div class="stattext">
+                        <p>MILLION VIDEO VIEWS</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>BILLION MEDIA IMPESSION</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>8.2</p>
+                      </div>
+                      <div class="stattext">
+                        <p>SECONDS OF MICROGRAVITY</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <div class="pure-g">
+                    <img class="pure-u-12-24" src="img/partners/ballantines-black.png"/>
+                    <img class="pure-u-12-24"  src="img/partners/work-club.png"/>
+                    </div>
+
+                  </div>
+
+                  </div>
+
+
+
+                  <div class="secondary-project-gallery pure-u-16-24 ">
+                  <div class="invisiBorder"></div>
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <div class="gallery galleryimg-spaceglass-1"></div>
+                    <div class="gallery galleryimg-spaceglass-2"></div>
+
+                    <div class="gallery galleryimg-spaceglass-4"></div>
+                    <div class="gallery galleryimg-spaceglass-3">
+                      <iframe class="youtube-embed"  width="80%" height="75%" src="https://www.youtube.com/embed/xpIP9OTSBNw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="gallery galleryimg-spaceglass-5"></div>
+                    <div class="gallery galleryimg-spaceglass-6">
+                    <iframe class="youtube-embed" width="80%" height="75%" src="https://www.youtube.com/embed/uzWla2dXI_k" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <ul class="gallery-thumbs">
+                      <li class="thumb-spaceglass-1"><img src="img/projects/spaceglass/thumb1.jpg"/></li>
+                      <li class="thumb-spaceglass-2"><img src="img/projects/spaceglass/thumb2.jpg"/></li>
+                      <li class="thumb-spaceglass-4"><img src="img/projects/spaceglass/thumb4.jpg"/></li>
+                      <li class="thumb-spaceglass-5"><img src="img/projects/spaceglass/thumb5.jpg"/></li>
+                      <li class="thumb-spaceglass-3"><img src="img/projects/spaceglass/thumb3.jpg"/></li>
+                      <li class="thumb-spaceglass-6"><img src="img/projects/spaceglass/thumb6.jpg"/></li>
+
+
+                    </ul>
+
+                  </div>
+                </section>
+
+                <section class="secondary pure-g" id= "secondary-3-BSQ">
+                  <div class="secondary-project-title pure-u-2-24">
+                    <!-- <a href="#" class="project-scroll-back">BACK</a>
+                    <br> -->
+
+                    <img src="img/projects/bsquares/title.png"/>
+                    <div class="project-nav">
+                      <a  href="#secondary-2-ISS"class="inter-project project-prev">&uarr; PREVIOUS &uarr;</a>
+                      <br>
+                    <a href="#secondary-5-dropfab" class="inter-project project-next">&darr; NEXT &darr; </a>
+                  </div>
+
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                    A modular electronics system enabling customized devices that clip together.
+                      </p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                    The Mission of B-Squares is to provide a modular electronics platform which allows users to easily build their own electronic applications.
+                  </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  The first 6 initial B-Squares modules (Battery, Solar, LED, Arduino, Proto, and iPhone Dock) were successfully launched on Kickstarter in 2011 with over 10,000 units manufactured and delivered to 1,100 backers and distributed by Seeed Studio.  Trillium is currently researching the transfer of both power and data through the magnetic contacts and the use of the B-Squares technology for nanosatellite applications.
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>4</p>
+                      </div>
+                      <div class="stattext">
+                        <p class="shrink">MAGNETIC CONNECTORS FOR<br> POWER AND DATA TRANSFER</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>10K</p>
+                      </div>
+                      <div class="stattext">
+                        <p>UNITS MANUFACTURED</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>1.1K</p>
+                      </div>
+                      <div class="stattext">
+
+                        <p>BACKERS ON KICKSTARTER</p>
+
+                      </div>
+                    </div>
+
+                    <!-- <div class="statbox">
+                      <div class="statnumber">
+                        <p>8.2S</p>
+                      </div>
+                      <div class="stattext">
+                        <p>OF MICROGRAVITY</p>
+                      </div>
+                    </div> -->
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <div class="pure-g">
+                    <img class="pure-u-12-24" src="img/partners/octo23.png"/>
+                    <img class="pure-u-12-24" src="img/partners/seeed.png"/>
+                  </div>
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <div class="gallery galleryimg-bsquares-1"></div>
+                    <div class="gallery galleryimg-bsquares-2"></div>
+                    <div class="gallery galleryimg-bsquares-3"></div>
+                    <div class="gallery galleryimg-bsquares-4">
+                      <iframe class="youtube-embed" width="80%" height="75%" src="https://www.youtube.com/embed/rLasAIhNM58" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <ul class="gallery-thumbs">
+                      <li class="thumb-bsquares-1"><img src="img/projects/bsquares/thumb1.jpg"/></li>
+                      <li class="thumb-bsquares-2"><img src="img/projects/bsquares/thumb2.jpg"/></li>
+                      <li class="thumb-bsquares-3"><img src="img/projects/bsquares/thumb3.jpg"/></li>
+                      <li class="thumb-bsquares-4"><img src="img/projects/bsquares/thumb4.jpg"/></li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!-- <section class="secondary" id= "secondary-4-horizon">
+
+                </section> -->
+
+                <section class="secondary pure-g" id="secondary-5-dropfab">
+
+                  <div class="secondary-project-title pure-u-2-24">
+
+                    <img src="img/projects/dropfab/title.png"/>
+                    <div class="project-nav">
+                      <a  href="#secondary-3-BSQ"class="inter-project project-prev">&uarr; PREVIOUS &uarr;</a>
+                      <br>
+                    <a href="#secondary-6-ultrascope" class="inter-project project-next">&darr; NEXT &darr; </a>
+                  </div>
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                    A self-contained deployable Fablab facility for building open hardware technologies to enable citizen science across the globe.  </p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>RECYCLED SHIPPING CONTAINER</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>2</p>
+                      </div>
+                      <div class="stattext">
+                        <p>CARBON COMPOSITE 3D PRINTERS</p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="statbox">
+                      <div class="statnumber">
+                        <p>12</p>
+                      </div>
+                      <div class="stattext">
+                        <p>MONTHS PER LOCATION</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>4.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>SECONDS OF 0 G</p>
+                      </div>
+                    </div> -->
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <div class="pure-g">
+                    <img class="pure-u-8-24" src="img/partners/osa.png"/>
+                    <img class="pure-u-8-24" src="img/partners/agc.png"/>
+                    <img class="pure-u-8-24" src="img/partners/iau.png"/>
+                  </div>
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <div class="gallery galleryimg-dropfab-1"></div>
+                    <div class="gallery galleryimg-dropfab-2"></div>
+                    <!-- <div class="gallery galleryimg-dropfab-3"></div> -->
+
+                    <ul class="gallery-thumbs">
+                      <li class="thumb-dropfab-1"><img src="img/projects/dropfab/thumb1.jpg"/></li>
+                      <li class="thumb-dropfab-2"><img src="img/projects/dropfab/thumb2.jpg"/></li>
+                      <!-- <li class="thumb-dropfab-3"><img src="img/projects/dropfab/thumb3.jpg"/></li> -->
+                    </ul>
+                  </div>
+
+                </section>
+
+                <section class="secondary pure-g" id="secondary-6-ultrascope">
+                  <div class="secondary-project-title pure-u-2-24">
+
+                    <img src="img/projects/ultrascope/title.png"/>
+                    <div class="project-nav">
+                      <a  href="#secondary-5-dropfab"class="inter-project project-prev">&uarr; PREVIOUS &uarr;</a>
+                      <br>
+                    <a href="#secondary-7-fuelpod" class="inter-project project-next">&darr; NEXT &darr; </a>
+                  </div>
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                    An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>2.7</p>
+                      </div>
+                      <div class="stattext">
+                        <p>THOUSAND COMMUNITY MEMBERS</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>62</p>
+                      </div>
+                      <div class="stattext">
+                        <p>MAKERS</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>55</p>
+                      </div>
+                      <div class="stattext">
+                        <p>3D PRINTED PARTS</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>WHITE HOUSE VISIT</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <div class="pure-g">
+                    <img class="pure-u-6-24" src="img/partners/agc.png"/>
+                    <img class="pure-u-6-24" src="img/partners/qualcomm.png"/>
+                    <img class="pure-u-6-24" src="img/partners/microsoft.png"/>
+                    <img class="pure-u-6-24" src="img/partners/osa.png"/>
+                  </div>
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <div class="gallery galleryimg-ultrascope-1"></div>
+                    <div class="gallery galleryimg-ultrascope-8"></div>
+                    <div class="gallery galleryimg-ultrascope-2"></div>
+                    <div class="gallery galleryimg-ultrascope-3"></div>
+                    <div class="gallery galleryimg-ultrascope-4"></div>
+                    <div class="gallery galleryimg-ultrascope-5"></div>
+                    <div class="gallery galleryimg-ultrascope-6"></div>
+                    <div class="gallery galleryimg-ultrascope-7">
+                      <iframe class="youtube-embed" width="92%" height="90%" src="https://www.youtube.com/embed/P4fuABCtMwQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <ul class="gallery-thumbs">
+                      <li class="thumb-ultrascope-1"><img src="img/projects/ultrascope/thumb1.jpg"/></li>
+                      <li class="thumb-ultrascope-8"><img src="img/projects/ultrascope/thumb8.jpg"/></li>
+                      <li class="thumb-ultrascope-2"><img src="img/projects/ultrascope/thumb2.jpg"/></li>
+                      <li class="thumb-ultrascope-3"><img src="img/projects/ultrascope/thumb3.jpg"/></li>
+                      <li class="thumb-ultrascope-4"><img src="img/projects/ultrascope/thumb4.jpg"/></li>
+                      <li class="thumb-ultrascope-5"><img src="img/projects/ultrascope/thumb5.jpg"/></li>
+                      <li class="thumb-ultrascope-6"><img src="img/projects/ultrascope/thumb6.jpg"/></li>
+                      <li class="thumb-ultrascope-7"><img src="img/projects/ultrascope/thumb7.jpg"/></li>
+
+                    </ul>
+                  </div>
+                </section>
+
+                <section class ="secondary pure-g" id= "secondary-7-fuelpod">
+                  <div class="secondary-project-title pure-u-2-24">
+
+                    <img src="img/projects/fuelpod/title.png"/>
+                    <div class="project-nav">
+                      <a  href="#secondary-6-ultrascope"class="inter-project project-prev">&uarr; PREVIOUS &uarr;</a>
+                      <br>
+                    <a href="#secondary-9-octotalk" class="inter-project project-next">&darr; NEXT &darr; </a>
+                  </div>
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                    An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>2.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>MILLION VIEWS</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>78</p>
+                      </div>
+                      <div class="stattext">
+                        <p>ARTICLES</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>5</p>
+                      </div>
+                      <div class="stattext">
+                        <p>PRODUCED</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>4.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>SECONDS OF 0 G</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                      <div class="pure-g">
+                    <img class="pure-u-8-24" src="img/partners/osa.png"/>
+                  </div>
+
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <div class="gallery galleryimg-fuelpod-1"></div>
+                    <div class="gallery galleryimg-fuelpod-2"></div>
+
+                    <div class="gallery galleryimg-fuelpod-4"></div>
+
+                    <ul class="gallery-thumbs">
+                      <li class="thumb-fuelpod-1"><img src="img/projects/fuelpod/thumb1.jpg"/></li>
+                      <li class="thumb-fuelpod-2"><img src="img/projects/fuelpod/thumb2.jpg"/></li>
+
+                      <li class="thumb-fuelpod-4"><img src="img/projects/fuelpod/thumb4.jpg"/></li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="secondary" id="secondary-8-shore">
+
+                </section>
+
+                <section class="secondary pure-g" id= "secondary-9-octotalk">
+                  <div class="secondary-project-title pure-u-2-24">
+
+                    <img src="img/projects/octotalk/title.png"/>
+                    <div class="project-nav">
+                      <a  href="#secondary-7-fuelpod"class="inter-project project-prev">&uarr; PREVIOUS &uarr;</a>
+                      <br>
+                    <a href="#secondary-11-phi" class="inter-project project-next">&darr; NEXT &darr; </a>
+                  </div>
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                  A revolutionary underwater communication technology that allows divers to speak freely to other divers and drones.</p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                    The inability to effectively communicate underwater hinders our ability to monitor, manage, and protect our oceanic ecosystems.  The Mission of  OCTOtalk is to provide an affordable wireless underwater communication apparatus, making it easier and more enjoyable for people to work, train, and play in an aquatic environment.
+                   </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  The Research and Development of the OCTOtalk system is still underway with multiple prototypes being tested in a confined SCUBA diving facility in London UK on a continuous basis.  A pilot Mission for OCTOtalk is currently being planned for summer 2016.
+                </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>40</p>
+                      </div>
+                      <div class="stattext">
+                        <p class="shrink">THOUSAND FLOATING PIECES <br>OF PLASTIC PER SQ. MILE</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>500</p>
+                      </div>
+                      <div class="stattext">
+                        <p>HYPOXIC DEAD ZONES</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>15</p>
+                      </div>
+                      <div class="stattext">
+                        <p class="shrink">TIMES FASTER OCEAN WARMING<br> IN THE LAST 60 YEARS</p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="statbox">
+                      <div class="statnumber">
+                        <p>4.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>SECONDS OF 0 G</p>
+                      </div>
+                    </div> -->
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <div class="pure-g">
+                    <img class="pure-u-8-24" src="img/partners/octo23.png"/>
+                  </div>
+
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <div class="gallery galleryimg-octotalk-1"></div>
+                    <div class="gallery galleryimg-octotalk-2"></div>
+
+                    <ul class="gallery-thumbs">
+                      <li class="thumb-octotalk-1"><img src="img/projects/octotalk/thumb1.jpg"/></li>
+                      <li class="thumb-octotalk-2"><img src="img/projects/octotalk/thumb2.jpg"/></li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!-- <section class="secondary" id="secondary-10-coast">
+
+                </section> -->
+
+                <section class="secondary pure-g" id= "secondary-11-phi">
+                  <div class="secondary-project-title pure-u-2-24">
+
+                    <img src="img/projects/phi/title.png"/>
+                    <div class="project-nav">
+                      <a  href="#secondary-9-octotalk"class="inter-project project-prev">&uarr; PREVIOUS &uarr;</a>
+
+                  </div>
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                  The Planetary Health Index (PHI) is a platform for measuring and assessing the ecological health of nature assets.
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                    The Mission of the Planetary Health Index (PHI) is to build a platform for measuring and monitoring the ecological health of  the planet.   Similar to financial capital, PHI  enables the ability to  assess "natural capital," the world’s stocks of natural assets which include geology, soil, air, and water at a given point on the planet.
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                    The Mission of the Planetary Health Index (PHI) is to build a platform for measuring and monitoring the ecological health of  the planet.   Similar to financial capital, PHI  enables the ability to  assess "natural capital," the world’s stocks of natural assets which include geology, soil, air, and water at a given point on the planet.
+  </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>4.9</p>
+                      </div>
+                      <div class="stattext">
+                        <p class="shrink">MILLION BARRELS OF OIL <br>FROM DEEPWATER HORIZON OIL SPILL</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>27</p>
+                      </div>
+                      <div class="stattext">
+                        <p class="shrink">THOUSAND SQUARE KM <br>AMAZON DEFORESATION IN 2004</p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="statbox">
+                      <div class="statnumber">
+                        <p>15</p>
+                      </div>
+                      <div class="stattext">
+                        <p>TIMES FASTER OCIEAN WARMING IN THE LAST 60 YEARS</p>
+                      </div>
+                    </div> -->
+
+                    <!-- <div class="statbox">
+                      <div class="statnumber">
+                        <p>4.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>SECONDS OF 0 G</p>
+                      </div>
+                    </div> -->
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <div class="pure-g">
+                    <img class="pure-u-8-24" src="img/partners/osa.png"/>
+                  </div>
+
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <div class="gallery galleryimg-phi-1"></div>
+                    <!-- <div class="gallery galleryimg-phi-2"></div>
+                    <div class="gallery galleryimg-phi-3"></div> -->
+
+                    <ul class="gallery-thumbs">
+                      <li class="thumb-phi-1"><img src="img/projects/phi/thumb1.jpg"/></li>
+                      <!-- <li class="thumb-phi-2"><img src="img/projects/phi/thumb2.jpg"/></li>
+                      <li class="thumb-phi-3"><img src="img/projects/phi/thumb3.jpg"/></li> -->
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="secondary pure-g" id="secondary-12-osa">
+                  <div class="secondary-project-title pure-u-2-24">
+                    <!-- <a href="#" class="project-scroll-back">BACK</a>
+                    <br> -->
+                    <img src="img/projects/ultrascope/title.png"/>
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                    An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>2.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>MILLION VIEWS</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>78</p>
+                      </div>
+                      <div class="stattext">
+                        <p>ARTICLES</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>5</p>
+                      </div>
+                      <div class="stattext">
+                        <p>PRODUCED</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>4.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>SECONDS OF 0 G</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <img src="img/partners/nasa-logo-300.png"/>
+                    <img src="img/partners/nvidia1.png"/>
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <img src="img/projects/ultrascope/wireframeSlide.jpg"/>
+                  </div>
+                </section>
+
+                <section class="secondary pure-g" id="secondary-13-mavericks">
+                  <div class="secondary-project-title pure-u-2-24">
+                    <!-- <a href="#" class="project-scroll-back">BACK</a>
+                    <br> -->
+                    <img src="img/projects/ultrascope/title.png"/>
+
+                  </div>
+
+                  <div class="secondary-project-desc pure-u-6-24">
+
+                  <h1>THE PROJECT:</h1>
+                  <p>
+                    An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE MISSION:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+
+                  <h1>THE STORY SO FAR:</h1>
+                  <p>
+                  Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids. Help identify and characterize Near Earth Asteroids, Help identify and characterize Near Earth Asteroids.
+                  </p>
+
+                  <div class="stats">
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>2.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>MILLION VIEWS</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>78</p>
+                      </div>
+                      <div class="stattext">
+                        <p>ARTICLES</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>5</p>
+                      </div>
+                      <div class="stattext">
+                        <p>PRODUCED</p>
+                      </div>
+                    </div>
+
+                    <div class="statbox">
+                      <div class="statnumber">
+                        <p>4.1</p>
+                      </div>
+                      <div class="stattext">
+                        <p>SECONDS OF 0 G</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="mission-partners">
+                    <h1>MISSION PARTNERS:</h1>
+                    <img src="img/partners/nasa-logo-300.png"/>
+                    <img src="img/partners/nvidia1.png"/>
+
+                  </div>
+                  </div>
+                  <div class="invisiBorder"></div>
+
+                  <div class="secondary-project-gallery pure-u-16-24">
+                    <a href="#" class="project-scroll-back">BACK</a>
+                    <img src="img/projects/ultrascope/wireframeSlide.jpg"/>
+                  </div>
+                </section>
+
+
+        </div>
+
 
         <footer class="pure-g trillium-footer">
             <div class="pure-u-1-2">
@@ -567,10 +1494,10 @@
 
                 </div>
             </div>
-            <div class="pure-u-1-6"></div>
+            <div class="pure-u-1-6 extrafooter"></div>
             <div class="pure-u-1-6 trillium-footer-missions">
                 <div>
-                    <h3> Missions </h3> 
+                    <h3> Missions </h3>
                     <ul class="footer-missions">
                         <li> <a href="#space-glass">Space Glass</a>  </li>
                         <li> <a href="#b-squares">B-Squares</a>  </li>
@@ -601,28 +1528,6 @@
             </div>
         </footer>
 
-        <!-- <section class="main stars">
-            <img src="img/stars.jpg"/>
-
-
-        </section>
-
-        <section class="main stars">
-            <img src="img/stars.jpg"/>
-        </section>
-
-        <section class="main stars">
-            <img src="img/stars.jpg"/>
-        </section>
-
-        <section class="main stars">
-            <img src="img/stars.jpg"/>
-        </section>
-
-        <section class="main stars">
-            <img src="img/stars.jpg"/>
-        </section> -->
-
 
         <script src="js/wow.js"></script>
         <script>
@@ -630,24 +1535,71 @@
         </script>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="bower_components/konami-code/src/jquery.konami.js" type="text/javascript"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
         <script src="js/jquery.scrollme.min.js"></script>
-    
+
+
+
+        <!-- janky click function to bring up overlay mock -->
         <script type="text/javascript">
-            
-            
+
+
+            //Konami code
+            $( window ).konami({
+              cheat: function() {
+                alert( 'SPAAAAACE!' );
+              }
+            });
+
+        </script>
+
+
+
+
+        <script type="text/javascript">
+
+
+
+        <script type="text/javascript">
+            function toggleMenuVisibility() {
+                $('.main-navigation').toggleClass('hidden');
+            }
+
+            if ($(window).width() < 500) {
+                $('.main-navigation').toggleClass('hidden');
+                $( ".future-animation" ).attr( "data-translatey", 20 );
+            }
+
+            if ($(window).width() > 1800) {
+                $( ".future-animation" ).attr( "data-translatey", 400 );
+            }
+
+
+        </script>
+
+
+        <script type="text/javascript">
+
             $(document).ready(function() {
-                
-                setTimeout(function(){
-                   $('#preloader').toggleClass('preloader-complete'); 
-                }, 1500);
+
+
 
                 setTimeout(function(){
-                   $('#preloader').toggleClass('hide-preloader'); 
-                }, 3000);
+
+                   $('#preloader').toggleClass('preloader-complete');
+                }, 200);
+
+                setTimeout(function(){
+                   $('#preloader').toggleClass('hide-preloader');
+                }, 400);
+
             });
         </script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
