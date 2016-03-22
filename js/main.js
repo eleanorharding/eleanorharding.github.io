@@ -12,6 +12,7 @@ function setHash(event){
 /*going to the project side */
 $('.project-link').bind('click',function(event){
 
+
       /*stores the scroll position before moving to the page */
       storedScrollPos = $(window).scrollTop();
 
@@ -23,9 +24,18 @@ $('.project-link').bind('click',function(event){
        $('html, body').animate({
            scrollTop: $($rightAnchor).offset().top-45
        }, 500);
-       $('html, body').animate({
-           scrollLeft: $($rightAnchor).offset().left+20
-       }, 500);
+       if ($(window).width() > 601) {
+         $('html, body').animate({
+             scrollLeft: $($rightAnchor).offset().left+20
+         }, 500);
+
+      $('html').css('overflowY', 'hidden');
+    } else {
+      $('html, body').animate({
+          scrollLeft: $($rightAnchor).offset().left
+      }, 500);
+    }
+
 
 
        /* Stops the anchor from jumping directly to the spot*/
@@ -33,7 +43,7 @@ $('.project-link').bind('click',function(event){
 
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
       //  timeout = window.setTimeout(setHash, 1000);
-       $('html').css('overflowY', 'hidden');
+
        console.log($(window).width());
 
  });
@@ -59,12 +69,17 @@ $('.project-link').bind('click',function(event){
 
        /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
        //  timeout = window.setTimeout(setHash, 1000);
+       if ($(window).width() > 601) {
         $('html').css('overflowY', 'hidden');
+
+      }
         console.log($(window).width());
 
   });
 /*going from the project side */
  $('.project-scroll-back').bind('click',function(event){
+
+
 
         $('html, body').animate({
             scrollLeft: 0
@@ -134,3 +149,23 @@ $( document ).ready(function() {
 
 
 });
+
+// function scrollLock(lock){
+//   if(lock == true){
+//
+// $(window).scroll(function locking(e){
+//   var footer = $('footer');
+//   var height = footer.height();
+//   var offset = footer.offset();
+//   var top = offset.top;
+//   var limit = (top) -100 ;
+//
+//   if($(window).scrollTop() >=limit){
+//     $(window).scrollTop(limit);
+//   }
+// })
+// }else{
+//   locking().stop();
+//
+// }
+// };

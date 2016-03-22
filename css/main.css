@@ -28,8 +28,8 @@
 .pace .pace-progress {
     position: fixed;
     z-index: 20000;
-    top: 5%;
-    right: 2%;
+    top: 0;
+    right: 0;
     height: 200px;
     width: 200px;
 
@@ -172,6 +172,7 @@ textarea {
 
 body {
     background-color: #000;
+    /*-webkit-overflow-scrolling: touch;*/
 }
 
 a {
@@ -199,6 +200,7 @@ header {
     background-color: #111;
     width: 100%;
     z-index: 1000;
+    -webkit-transform: translateZ(100);
 
 }
 
@@ -221,10 +223,9 @@ header {
 
 #preloader > div > div.preloader-content {
     position: absolute;
-    top: 5%;
-    right: 2%;
+    top: 38%;
     height: 100%;
-    text-align: right;
+    text-align: center;
     width: 100%;
 }
 
@@ -244,6 +245,11 @@ header {
 
 #preloader.preloader-complete {
     opacity: 0;
+}
+
+#preloader p {
+    position: relative;
+    top: -107px;
 }
 
 .trillium-logo-main {
@@ -481,7 +487,7 @@ div.part2 {
 }
 
 div.part2 div {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -520,12 +526,16 @@ div.part2 div {
     max-width:400px;
     right: 20%;
     top:35%;
+    box-shadow: 0px 0px 20px #1a5f9c;
+    border-radius: 50%;
 }
 
 .b-square-circle {
     max-width:400px;
     right: 8%;
     bottom: 33%;
+    box-shadow: 0px 0px 20px #1a5f9c;
+    border-radius: 50%;
 }
 
 .scuba-divers {
@@ -610,8 +620,9 @@ div.section-content.health-of-an-ecosystem-text {
     text-align: left;
     max-width: 250px;
 
-    border-left: 3px solid #fff;
-    border-right: 3px solid #fff;
+    border-left: 3px solid #79A9D4;
+    border-right: 3px solid #79A9D4;
+    background-color: ;
     font-size: 0.8em;
     position: absolute;
 
@@ -624,6 +635,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#79A9D4;
 }
 
 .project-badge:after {
@@ -633,6 +645,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#79A9D4;
     bottom: 0px;
 }
 
@@ -643,6 +656,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#79A9D4;
     top:0;
     right:0;
 }
@@ -654,12 +668,14 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#79A9D4;
     bottom: 0px;
     right: 0;
 }
 
 .project-badge div {
-    background-color: rgba(210,210,210,0.6);
+    /*background-color: rgba(210,210,210,0.6);*/
+    background-color: rgba(30,30,30,0.55);
     padding: 10px;
     margin: 6px 3px;
     /*box-shadow: 0px 0px 50px rgba(0,20,50,0.2);*/
@@ -667,6 +683,7 @@ div.section-content.health-of-an-ecosystem-text {
 
 .project-badge h3 {
     font-family: 'ailerons';
+      /*text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     letter-spacing: 5px;
     font-size: 1.8em;
     color: #fff;
@@ -683,11 +700,14 @@ p {
     color: #fff;
     font-weight: 400;
     font-size: 1.8em;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .team-bios div {
     margin: 30px 0px 70px 0px;
+}
+.team-bios div.team-bio {
+    margin: 90px 0px 70px 0px;
 }
 
 .emphasize {
@@ -697,8 +717,9 @@ p {
 
 .project-badge p {
     color: #fff;
+      /*text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     margin: 5px 2px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .space-glass-badge {
@@ -716,27 +737,45 @@ p {
 }
 
 div.space-glass-badge div:nth-child(2) {
-    background-color: #483439;
+    background-color: #2F74B1;
+/*    background-color: #483439;*/
+}
+
+div.b-squares-badge div:nth-child(2) {
+    background-color: #2F74B1;
 }
 
 div.dropfab-badge div:nth-child(2) {
-    background-color: #3E4F6B;
+/*    background-color: #3E4F6B;*/
+    background-color: #2F74B1;
+}
+
+div.ultrascope-badge div:nth-child(2) {
+    background-color: #2F74B1;
 }
 
 div.fuelpod-badge div:nth-child(2) {
-    background-color: #911D18;
+/*    background-color: #911D18;*/
+    background-color: #2F74B1;
 }
 
 div.octotalk-badge div:nth-child(2) {
-    background-color: #1D284B;
+/*    background-color: #1D284B;*/
+    background-color: #2F74B1;
 }
 
 div.phi-badge div:nth-child(2) {
-    background-color: #5579A8;
+/*    background-color: #5579A8;*/
+    background-color: #2F74B1;
 }
 
 div.osa-badge div:nth-child(2) {
-    background-color: #222;
+/*    background-color: #222;*/
+    background-color: #2F74B1;
+}
+
+div.mavericks-lab-badge div:nth-child(2) {
+    background-color: #2F74B1;
 }
 
 .project-badge div:nth-child(2):hover {
@@ -792,11 +831,13 @@ div.osa-badge div:nth-child(2) {
 .mavericks-lab-badge {
     top: 68%;
     right: 1%;
+    z-index:100;
 }
 
 
 .starshine {
     background-image: url('../img/stars.jpg');
+    background-size: 100% auto;
 }
 
 .all-partners {
@@ -824,7 +865,7 @@ section.secondary {
   height: 100vh; /* Default secondary height, set precise h in spec. class */
   /*border:2px solid white;*/
   color:white;
-  margin-top:50px;
+  margin-top:0;
 
 }
 
@@ -839,7 +880,9 @@ section.secondary {
 section.secondary-1-moon {
   height:400px;
 }
-
+section#secondary-2-ISS{
+  margin-top:50px;
+}
 section#secondary-3-BSQ{
   background-color: #161827;
 }
@@ -896,6 +939,10 @@ section#secondary-13-mavericks{
   padding-top:0;
 
 }
+
+  .mobile-back{
+    display:none;
+  }
 .secondary-project-title{
   /*position:absolute;*/
   /*background-image: url("../img/dropfab-title.png");
@@ -908,6 +955,7 @@ section#secondary-13-mavericks{
   background-color: #fff;
   display:inline-block;
   text-align: center;
+  position:relative;
   /*margin:0;
   padding:0;*/
 }
@@ -920,11 +968,10 @@ section#secondary-13-mavericks{
 }
 
 .secondary-project-title a{
-  color: rgba(0,0,0,0.4);
+
   font-size: 0.7em;
   text-align: center;
-  margin-left:15px;
-  margin-top:5px;
+
 }
 
 .secondary-project-title a:hover{
@@ -972,6 +1019,7 @@ section#secondary-13-mavericks{
 .stats{
   padding-top:1px;
   margin-left:30px;
+  /*transform: translateY(50%);*/
 }
 .statbox{
   margin-bottom:10px;
@@ -988,7 +1036,7 @@ section#secondary-13-mavericks{
 }
 .statnumber p{
   font-family:'ailerons';
-  letter-spacing:-10px;
+  letter-spacing:-7px;
   font-size:2.2em;
     text-align: center;
     margin:0 10px 0 0 ;
@@ -1076,8 +1124,12 @@ section#secondary-13-mavericks{
 }
 .youtube-embed{
   margin-top:50px;
+  width:75%;
+  height:60%;
 }
-
+.youtube-frame{
+  background-color:black;
+}
 .project-scroll-back {
   position:absolute;
   left:96%;
@@ -1092,12 +1144,18 @@ position:relative;
 
 }
 .project-nav{
-  position:
+  position:absolute;
+  bottom:60px;
+  width:100%;
+  text-align: center;
+  letter-spacing:0px;
 }
 
 .project-nav a{
-
+  color:#2F74B1;
+  letter-spacing:0px;
 }
+
 
 .secondary-project-gallery a:hover{
   text-decoration: underline;
@@ -1106,6 +1164,12 @@ position:relative;
 .secondary-project-gallery a{
 
   text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.project-copy{
+  position:relative;
+  top:0px;
+  height:auto;
 }
 
 .gallery-1{
@@ -1133,6 +1197,7 @@ position:relative;
   cursor:pointer;
   display:inline;
   margin:10px;
+
 
 }
 .gallery-thumbs li img{
@@ -1504,6 +1569,11 @@ div.content.part2.designers-and-engineers-container div {
     color: rgba(255,255,255,0.87);
 }
 
+.team-headshots img {
+    width: 100%;
+    vertical-align: top;
+}
+
 
 .hamburger {
     position: absolute;
@@ -1523,7 +1593,12 @@ ul.main-navigation.hidden {
 
 .pure-u-1-2 {
     min-width: 400px;
+}
 
+.team-bio h5 {
+    color: #3481c5;
+    text-transform: uppercase;
+    margin: 0px;
 }
 
 @-webkit-keyframes diverBob {
@@ -1778,7 +1853,7 @@ ul.main-navigation.hidden {
   }
   .statnumber p{
     font-size:1.6em;
-    letter-spacing:-2px;
+
   }
   .stattext p{
     font-size:0.8em;
@@ -1806,8 +1881,11 @@ ul.main-navigation.hidden {
     .bsquare-box {
         left: -300px;
     }
+
     .secondary-project-desc h1{
       font-size:0.8em;
+      margin-bottom:1px;
+      margin
     }
     .secondary-project-desc h1:first-child{
       margin-top:50px;
@@ -1815,25 +1893,58 @@ ul.main-navigation.hidden {
 
     .secondary-project-desc p{
       font-size:0.7em;
+      letter-spacing:normal;
+      margin-bottom:5px;
     }
     .statnumber{
-      width:35px;
-      height:35px;
+      width:33px;
+      height:33px;
     }
     .statnumber p{
-      font-size:1.6em;
-      letter-spacing:-2px;
+      letter-spacing:-4px;
+      font-size:1.4em;
+
     }
     .stattext p{
-      font-size:0.8em;
+      font-size:0.7em;
+      margin-left:10px;
     }
     .mission-partners {
       margin-top:10px !important;
+      bottom:40px;
     }
     .stats{
       padding-top:5px;
     }
 
+
+    .section-1-moon {
+        min-height: 500px;
+    }
+    .section-2-ISS {
+        min-height: 700px;
+    }
+    .section-3-BSQ {
+        min-height: 700px;
+    }
+    .section-4-horizon {
+        min-height: 400px;
+    }
+    .section-5-village {
+        min-height: 900px;
+    }
+    .section-6-shore {
+        min-height: 700px;
+    }
+    .section-7-underwater {
+        min-height: 700px;
+    }
+    .section-8-coast {
+        min-height: 700px;
+    }
+    .section-9-atmosphere {
+        min-height: 700px;
+    }
 
 }
 
@@ -1880,7 +1991,7 @@ ul.main-navigation.hidden {
     }
     .statnumber p{
       font-size:1.6em;
-      letter-spacing:-2px;
+
     }
     .stattext p{
       font-size:0.6em;
@@ -1893,7 +2004,13 @@ ul.main-navigation.hidden {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  .gallery-thumbs li img{
+    height:35px;
+  }
+    .section-1-moon div.section-content {
+        top: 42%;
+    }
     .bsquare-box {
         left: -500px;
     }
@@ -1956,6 +2073,7 @@ ul.main-navigation.hidden {
         top: 40%;
     }
     .project-badge h3 {
+
         letter-spacing: 0px;
         font-size: 1.4em;
     }
@@ -1980,21 +2098,49 @@ ul.main-navigation.hidden {
         width:22%;
     }
 
+    .project-badge p {
+        margin: 2px 2px;
+    }
+    .phi-badge {
+        max-width: 330px;
+    }
 
 }
 
 
 @media only screen and (max-width: 600px) {
+    .section-1-moon {
+        min-height: 250px;
+    }
     ul.sub-nav {
         display: block;
         position: relative;
     }
 
-}
+    .section-2-ISS {
+        min-height: 320px;
+    }
+    .section-3-BSQ {
+        min-height: 320px;
+    }
+    .section-4-horizon {
 
-@media screen and (max-width: 425px) {
-    .section-1-moon {
         min-height: 200px;
+    }
+    .section-5-village {
+        min-height: 400px;
+    }
+    .section-6-shore {
+        min-height: 350px;
+    }
+    .section-7-underwater {
+        min-height: 300px;
+    }
+    .section-8-coast {
+        min-height: 300px;
+    }
+    .section-9-atmosphere {
+        min-height: 300px;
     }
     ul.nav {
         display: block;
@@ -2029,6 +2175,121 @@ ul.main-navigation.hidden {
     }
     ul.main-navigation {
 
+    }
+    .bsquare-box {
+        left: -900px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .space-glass-circle {
+        right: 60%;
+    }
+    div.section-content.science-advanced-by-citizens {
+        top: 33%;
+    }
+    .asteroid {
+        width: 250px;
+    }
+    .text-medium {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+    div.section-content.health-of-an-ecosystem-text {
+        top: 35%;
+    }
+    .phi-badge {
+        top: 55%;
+    }
+    .project-badge p {
+        font-size: 0.9em;
+    }
+    .relationships {
+        margin: 0px 40px;
+    }
+
+    section.secondary{
+      height:100%;
+    }
+    .secondary-project-title{
+      height:initial;
+    }
+    .mission-partners{
+      position:static;
+    }
+
+    .secondary-project-desc{
+      padding-top:23px;
+    }
+    .invisiBorder{
+      display:none;
+    }
+
+    .secondary-project-gallery{
+      height:500px;
+
+    }
+    .gallery-thumbs{
+      padding:0px;
+    }
+    .gallery-thumbs li{
+      margin:2px;
+    }
+    .mobile-back{
+      display:block;
+      color:black;
+      left:84%;
+      margin-top:-20px;
+      font-size:0.8em;
+    }
+    .secondary-project-title img{
+      margin-top:20px;
+    }
+    .project-copy h1{
+      margin-left:15px;
+      font-size:0.8em;
+    }
+    .project-copy p{
+      margin-left:15px;
+    }
+    .stats{
+      margin-left:15px;
+
+    }
+
+    .statnumber{
+    height:1.5em;
+    width:1.5em;
+
+    }
+    .statnumber p{
+      font-size:1.2em;
+    }
+    .mission-partners h1{
+      font-size:0.8em;
+      margin-left:15px;
+    }
+    .big-back{
+      display:none;
+    }
+    .secondary-project-gallery{
+      height:300px;
+    }
+    .secondary{
+      border-top:solid 5px white;
+    }
+    .gallery-thumbs{
+      top:80%;
+    }
+    .inter-project{
+      display:none;
+    }
+
+}
+
+@media screen and (max-width: 435px) {
+    .section-1-moon {
+        min-height: 200px;
     }
     .building-a-future {
         width: 180px;
@@ -2167,6 +2428,11 @@ ul.main-navigation.hidden {
     .project-badge div {
         margin: 3px;
     }
+
+    .trillium-logo-main {
+        width: 45%;
+    }
+
 
 
 }
