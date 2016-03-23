@@ -358,6 +358,10 @@ section.main img.sectionBG {
     padding-right: 40px;
 }
 
+.padded-top-bottom {
+    padding: 50px 0px;
+}
+
 .how-we-work-content h2 {
     color: #fff;
     font-weight: normal;
@@ -405,9 +409,15 @@ section.main img.sectionBG {
     font-family: 'ailerons';
 }
 
-form.mission-form *{
+form.mission-form{
     color: #fff;
     font-size: 1.2em;
+}
+
+form.mission-form.pure-form fieldset {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 form.mission-form.pure-form input {
@@ -419,15 +429,20 @@ form.mission-form.pure-form input {
 
 form.pure-form.mission-form legend {
     color: #fff;
+    font-family: 'ailerons';
+    font-size: 2em;
 }
 
-form.mission-form button.pure-button.pure-button-primary {
+form.mission-form .pure-button.pure-button-primary {
     font-size: 1em;
     margin: 20px 0px;
     text-transform: uppercase;
     background-color: #3481c5;
 }
 
+.low-z {
+    
+}
 
 .main-content {
     margin-top: 45px;
@@ -500,7 +515,8 @@ div.part2 div {
 }
 
 .how-we-work p {
-
+  margin-left:40px;
+  margin-right:40px;
 }
 
 .work-with-us-CTA {
@@ -700,14 +716,11 @@ p {
     color: #fff;
     font-weight: 400;
     font-size: 1.8em;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .team-bios div {
     margin: 30px 0px 70px 0px;
-}
-.team-bios div.team-bio {
-    margin: 90px 0px 70px 0px;
 }
 
 .emphasize {
@@ -1097,6 +1110,7 @@ section#secondary-13-mavericks{
 
   /*border:solid rgba(255,255,255,0.5) 5px;*/
 }
+
 
 .invisiBorder{
   position:absolute;
@@ -1556,22 +1570,15 @@ font-size:1.3em;
     border-top: 3px dotted #333;
     border-bottom: 3px dotted #333;
     padding: 100px 0px;
-    /*font-family: robotolight;*/
 }
 
 
 div.content.part2.designers-and-engineers-container div {
     width: 80%;
-
 }
 
 #partners p {
     color: rgba(255,255,255,0.87);
-}
-
-.team-headshots img {
-    width: 100%;
-    vertical-align: top;
 }
 
 
@@ -1595,10 +1602,16 @@ ul.main-navigation.hidden {
     min-width: 400px;
 }
 
-.team-bio h5 {
-    color: #3481c5;
-    text-transform: uppercase;
-    margin: 0px;
+.full-width-img img {
+    width: 90%;
+}
+
+.full-width-img {
+    margin: -2px;
+}
+
+.hideme, .pure-button.hideme {
+    display: none;
 }
 
 @-webkit-keyframes diverBob {
@@ -1840,12 +1853,12 @@ ul.main-navigation.hidden {
   .secondary-project-desc h1{
     font-size:0.8em;
   }
-  .secondary-project-desc h1:first-child{
+  .secondary-project-desc h1:first-of-type{
     margin-top:50px;
   }
 
   .secondary-project-desc p{
-    font-size:0.65em;
+    font-size:0.7em;
   }
   .statnumber{
     width:35px;
@@ -1856,7 +1869,7 @@ ul.main-navigation.hidden {
 
   }
   .stattext p{
-    font-size:0.8em;
+    font-size:0.7em;
   }
   .mission-partners h1{
     margin-top:10px !important;
@@ -1874,6 +1887,34 @@ ul.main-navigation.hidden {
   .pure-img{
     max-height:75px;
   }
+
+  .section-1-moon {
+        min-height: 450px;
+    }
+    .section-2-ISS {
+        min-height: 650px;
+    }
+    .section-3-BSQ {
+        min-height: 650px;
+    }
+    .section-4-horizon {
+        min-height: 350px;
+    }
+    .section-5-village {
+        min-height: 850px;
+    }
+    .section-6-shore {
+        min-height: 650px;
+    }
+    .section-7-underwater {
+        min-height: 650px;
+    }
+    .section-8-coast {
+        min-height: 650px;
+    }
+    .section-9-atmosphere {
+        min-height: 650px;
+    }
 
 }
 
@@ -1902,7 +1943,7 @@ ul.main-navigation.hidden {
     }
     .statnumber p{
       letter-spacing:-4px;
-      font-size:1.4em;
+      font-size:1.3em;
 
     }
     .stattext p{
@@ -1918,33 +1959,7 @@ ul.main-navigation.hidden {
     }
 
 
-    .section-1-moon {
-        min-height: 500px;
-    }
-    .section-2-ISS {
-        min-height: 700px;
-    }
-    .section-3-BSQ {
-        min-height: 700px;
-    }
-    .section-4-horizon {
-        min-height: 400px;
-    }
-    .section-5-village {
-        min-height: 900px;
-    }
-    .section-6-shore {
-        min-height: 700px;
-    }
-    .section-7-underwater {
-        min-height: 700px;
-    }
-    .section-8-coast {
-        min-height: 700px;
-    }
-    .section-9-atmosphere {
-        min-height: 700px;
-    }
+
 
 }
 
@@ -1973,8 +1988,9 @@ ul.main-navigation.hidden {
     .section-9-atmosphere {
         min-height: 600px;
     }
-
-
+    form.mission-form.pure-form fieldset {
+        width: 80%;
+    }
     .secondary-project-desc h1{
       font-size:1em;
     }
@@ -2002,6 +2018,7 @@ ul.main-navigation.hidden {
     .stats{
       padding-top:5px;
     }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -2115,6 +2132,9 @@ ul.main-navigation.hidden {
     ul.sub-nav {
         display: block;
         position: relative;
+    }
+    form.mission-form.pure-form fieldset {
+        width: 90%;
     }
 
     .section-2-ISS {
